@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>커피 원두 이야기 - Coffee Bean Stories</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1>Coffee Bean Stories</h1>
+                <p>커피 원두 이야기</p>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">홈</a></li>
+                <li><a href="#beans">원두 종류</a></li>
+                <li><a href="#history">커피 역사</a></li>
+                <li><a href="#brewing">추출 방법</a></li>
+                <li><a href="#contact">연락처</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>세계 최고의 커피 원두를 만나보세요</h2>
+                <p>각기 다른 풍미와 아로마를 가진 프리미엄 커피 원두들의 이야기를 들려드립니다.</p>
+                <button class="cta-button" onclick="scrollToSection('beans')">원두 탐색하기</button>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-coffee-beans.jpg" alt="커피 원두">
+            </div>
+        </section>
+
+        <section id="beans" class="beans-section">
+            <div class="container">
+                <h2>프리미엄 커피 원두</h2>
+                <div class="beans-grid">
+                    <div class="bean-card" data-bean="arabica">
+                        <img src="images/arabica-beans.jpg" alt="아라비카 원두">
+                        <h3>아라비카 (Arabica)</h3>
+                        <p>부드럽고 달콤한 맛과 향이 특징인 세계에서 가장 인기 있는 원두</p>
+                        <div class="bean-details">
+                            <span class="origin">원산지: 에티오피아</span>
+                            <span class="flavor">풍미: 달콤함, 과일향</span>
+                        </div>
+                    </div>
+                    <div class="bean-card" data-bean="robusta">
+                        <img src="images/robusta-beans.jpg" alt="로부스타 원두">
+                        <h3>로부스타 (Robusta)</h3>
+                        <p>강한 쓴맛과 높은 카페인 함량으로 에스프레소에 많이 사용</p>
+                        <div class="bean-details">
+                            <span class="origin">원산지: 아프리카</span>
+                            <span class="flavor">풍미: 쓴맛, 견과류향</span>
+                        </div>
+                    </div>
+                    <div class="bean-card" data-bean="liberica">
+                        <img src="images/liberica-beans.jpg" alt="리베리카 원두">
+                        <h3>리베리카 (Liberica)</h3>
+                        <p>독특한 스모키한 풍미와 과일향이 특징인 희귀한 원두</p>
+                        <div class="bean-details">
+                            <span class="origin">원산지: 라이베리아</span>
+                            <span class="flavor">풍미: 스모키, 과일향</span>
+                        </div>
+                    </div>
+                    <div class="bean-card" data-bean="excelsa">
+                        <img src="images/excelsa-beans.jpg" alt="엑셀사 원두">
+                        <h3>엑셀사 (Excelsa)</h3>
+                        <p>신맛과 과일향이 강한 독특한 풍미의 특별한 원두</p>
+                        <div class="bean-details">
+                            <span class="origin">원산지: 동남아시아</span>
+                            <span class="flavor">풍미: 신맛, 과일향</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="history" class="history-section">
+            <div class="container">
+                <h2>커피의 역사</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">9세기</div>
+                        <div class="timeline-content">
+                            <h3>커피의 발견</h3>
+                            <p>에티오피아의 목동 칼디가 염소들이 빨간 열매를 먹고 활기차게 뛰어다니는 것을 보고 커피를 발견했다는 전설</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">15세기</div>
+                        <div class="timeline-content">
+                            <h3>예멘으로 전파</h3>
+                            <p>커피가 예멘으로 전해지며 최초의 커피 재배와 음용이 시작됨</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">17세기</div>
+                        <div class="timeline-content">
+                            <h3>유럽에 도입</h3>
+                            <p>베네치아 상인들을 통해 유럽에 커피가 전해지며 커피하우스 문화가 시작됨</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">18세기</div>
+                        <div class="timeline-content">
+                            <h3>신대륙 전파</h3>
+                            <p>남미와 중미 지역에 커피 재배가 확산되며 현재의 주요 생산지들이 형성됨</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="brewing" class="brewing-section">
+            <div class="container">
+                <h2>커피 추출 방법</h2>
+                <div class="brewing-methods">
+                    <div class="method-card">
+                        <img src="images/brewing-espresso.jpg" alt="에스프레소">
+                        <h3>에스프레소 (Espresso)</h3>
+                        <p>고압으로 짧은 시간에 추출하는 이탈리아 전통 방식. 진한 맛과 크레마가 특징</p>
+                        <ul>
+                            <li>추출 시간: 25-30초</li>
+                            <li>물 온도: 90-96°C</li>
+                            <li>압력: 9bar</li>
+                        </ul>
+                    </div>
+                    <div class="method-card">
+                        <img src="images/brewing-hand-drip.jpg" alt="드립 커피">
+                        <h3>핸드 드립 (Hand Drip)</h3>
+                        <p>필터를 통해 천천히 물을 부어 추출하는 방식. 깔끔하고 부드러운 맛</p>
+                        <ul>
+                            <li>추출 시간: 3-4분</li>
+                            <li>물 온도: 90-96°C</li>
+                            <li>분쇄도: 중간</li>
+                        </ul>
+                    </div>
+                    <div class="method-card">
+                        <img src="images/brewing-french-press.jpg" alt="프렌치 프레스">
+                        <h3>프렌치 프레스 (French Press)</h3>
+                        <p>커피 가루를 우려내는 방식으로 진하고 풍부한 바디감이 특징</p>
+                        <ul>
+                            <li>추출 시간: 4분</li>
+                            <li>물 온도: 90-96°C</li>
+                            <li>분쇄도: 굵음</li>
+                        </ul>
+                    </div>
+                    <div class="method-card">
+                        <img src="images/brewing-cold-brew.jpg" alt="콜드브루">
+                        <h3>콜드 브루 (Cold Brew)</h3>
+                        <p>찬물로 12-24시간 우려내는 방식. 부드럽고 산미가 적은 것이 특징</p>
+                        <ul>
+                            <li>추출 시간: 12-24시간</li>
+                            <li>물 온도: 상온 또는 차가운 물</li>
+                            <li>분쇄도: 굵음</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Coffee Bean Stories</h3>
+                    <p>세계 최고의 커피 원두 이야기를 전해드립니다.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>연락처</h4>
+                    <p>이메일: info@coffeebeanstories.com</p>
+                    <p>전화: 02-1234-5678</p>
+                </div>
+                <div class="footer-section">
+                    <h4>소셜 미디어</h4>
+                    <p>Instagram: @coffeebeanstories</p>
+                    <p>Facebook: Coffee Bean Stories</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Coffee Bean Stories. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
